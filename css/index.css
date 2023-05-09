@@ -1,0 +1,226 @@
+section {
+    padding : 1em 0.6em;
+}
+
+.row {
+    padding : 1.5em 0;
+    display : flex ;
+    justify-content: space-between;
+    align-items : center;
+    width : 100%;
+    gap : 0.5em;
+}
+
+select{
+    padding : 1em;
+    border-radius: 1.8em;
+    margin: 0 0.2em;
+}
+
+.bg-img {
+    background: url('../image/headphone.jpg') top right no-repeat;
+    background-size : contain;
+    height: 22em;
+    text-align: start;
+    padding : .5em 0.8em;
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    position : relative;
+}
+
+.up {
+    z-index: 1;
+    padding: 1em;
+    color:white;
+}
+
+.bannercolor {
+    width : 69em;
+    height : 100%;
+    position: absolute;
+    z-index: 0;
+    background-color: rgb(247, 188, 78);
+}
+
+#products {
+    width: 100%;
+    text-align: start;
+}
+
+#products .row {
+    justify-content: start;
+    align-items: start;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    width: 107%;
+    padding: 0 0.5em;
+}
+
+.like {
+    width: 12%;
+    height: 10%;
+    right: 2%;
+    top : 5%;
+    padding: 0.4em;
+    background-color: #FFFFFF;
+    position: absolute;
+    border-radius: 10em;
+}
+
+.like > * {
+    height: 100%;
+    width: 100%;
+}
+
+.card-product{
+    position: relative;
+    width : 23%;
+    padding : 1em 0.2em;
+}
+
+.card-product .card-head {
+    width : 100%;
+    background-color: #f0f0f0;
+    border-radius: 0.8em;
+}
+
+.card-product .card-head .card-img img {
+    width: 100%;
+    height : 100%;
+    object-fit: fill;
+}
+
+.card-product .card-body {
+    width: 100%;
+}
+
+.card-product .card-body .row {
+    padding: 0 1.5em 0 0 !important;
+    justify-content: space-between !important;
+}
+
+.card-product .card-footer {
+    padding: 1.5em 0;
+}
+
+.btn-outline {
+    color: #023f2a;
+    border: 1px solid #023f2a;
+    background-color: #fafafa;
+    border-radius: 8em;
+    padding: 0.9em;
+    transition: 0.5s all linear;
+}
+
+.btn-outline:hover {
+    color: white;
+    background-color: #023f2a;
+}
+
+.btn-filled {
+    color: white;
+    background-color: #023f2a;
+    border-radius: 8em;
+    padding: 0.9em;
+}
+
+.card{
+    text-align: start;
+    padding: 1em;
+    width: 100%;
+}
+
+.card .row {
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.divider {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 1px;
+}
+
+.card-category, .card-search {
+    width: 48%;
+    height: 7em;
+    background-color: #f0f0f0;
+    border-radius: 1em;
+    display:flex;
+    gap : 1em;
+}
+
+.card-category > .col > * {
+    width: 100%;
+}
+
+.card-category .card-img, .card-search .card-img {
+    width: 38%;
+    height: 100%;
+}
+
+.card-category .card-img img, .card-search .card-img img{
+    width: 100%;
+    height : 100%;
+    object-fit: cover;
+}
+
+.card-search .card-img img {
+    width: 40%;
+}
+
+.card-search {
+    background-color: white;
+    width: 100%;
+    margin: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#show, #searches {
+    position: relative;
+}
+
+li > .card{
+    position: absolute;
+    z-index: 2;
+    margin: 0 0 0 -10em;
+    width: 115vh;
+    opacity: 0;
+    border-radius: 1em;
+    background-color: white;
+    transition: 0.8s all linear;
+}
+
+#show:focus-within .card  {
+    opacity: 1;
+    margin: 2em 0 0 -10em;
+    pointer-events: none;
+}
+
+#searches input {
+    width: 99%;
+    border-radius: 5em;
+    padding: 1em;
+    border: 1px solid #f0f0f0;
+    margin: 1em;
+}
+
+#searches .card {
+    position: absolute;
+    z-index: 2;
+    margin: -2em 0 0 1.2em;
+    width: 98%;
+    opacity: 0;
+    border-radius: 1em;
+    background-color: white;
+    transition: 0.8s all linear;
+}
+
+#searches:focus-within .card  {
+    opacity: 1;
+    margin: 0.2em 0 0 1.2em;
+    pointer-events: none;
+}
